@@ -195,7 +195,7 @@ public class AdmitPatient extends HttpServlet {
                    }
                
                admit(myinplist,admitno,myrlist);
-               System.out.println("There are "+ noip +"Patients admitted in room");
+               //System.out.println("There are "+ noip +"Patients admitted in room");
                RequestDispatcher re=request.getRequestDispatcher("admission.jsp");
                request.setAttribute("admitno",admitno);
                re.forward(request, response);
